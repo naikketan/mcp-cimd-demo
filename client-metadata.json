@@ -1,7 +1,7 @@
 {
   "client_id": "https://naikketan.github.io/mcp-cimd-demo/client-metadata.json",
-  "client_name": "Visual Studio Code MCP Client",
-  "client_uri": "https://code.visualstudio.com/",
+  "client_name": "FastMCP Auth0 CIMD Client",
+  "client_uri": "https://naikketan.github.io/mcp-cimd-demo",
   "application_type": "native",
   "grant_types": [
     "authorization_code",
@@ -11,8 +11,9 @@
     "code"
   ],
   "redirect_uris": [
-    "http://127.0.0.1:33418",
+    "http://127.0.0.1:8765/callback",
     "https://vscode.dev/redirect"
   ],
-  "token_endpoint_auth_method": "none"
+  "token_endpoint_auth_method": "none",
+  "scope": "openid profile offline_access tools:read"
 }
